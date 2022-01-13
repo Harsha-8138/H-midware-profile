@@ -1,0 +1,33 @@
+GET http://localhost:3000/books/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNjQyMDIwOTQwfQ.nYUMwcXTjGWVInUVeJfTuOySk-u9B9st2WLvWzgkq-A
+
+###
+
+GET http://localhost:3000/books/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNjQxOTYwMDM4fQ.nXxEk1J7i5Be2qIeFLusL-4Jf7cxAXUaN2qiBMmGn3o
+###
+
+POST http://localhost:3000/users/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNjQxOTYwMDM4fQ.nXxEk1J7i5Be2qIeFLusL-4Jf7cxAXUaN2qiBMmGn3o
+Content-Type: application/json
+
+{    
+    "username": "rahul123",
+    "password": "rahul@456",
+    "gender":"male",
+    "location":"hyderabad"
+}
+
+###
+
+POST http://localhost:3000/login/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNjQxOTYwMDM4fQ.nXxEk1J7i5Be2qIeFLusL-4Jf7cxAXUaN2qiBMmGn3o
+Content-Type: application/json
+
+{    
+    "username": "rahul123",
+    "password": "rahul@456"
+}
+###
+GET http://localhost:3000/profile/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNjQxOTYwMDM4fQ.nXxEk1J7i5Be2qIeFLusL-4Jf7cxAXUaN2qiBMmGn3o
